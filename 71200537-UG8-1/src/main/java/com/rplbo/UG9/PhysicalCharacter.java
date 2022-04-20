@@ -9,7 +9,7 @@ public abstract class PhysicalCharacter extends Character {
     private int armor;
 
     public void ShowCharacterinfo(){
-        System.out.println("Hero    : "+armor);
+        System.out.println("Hero: "+armor);
 
     }
     protected void attacked(int serangan){

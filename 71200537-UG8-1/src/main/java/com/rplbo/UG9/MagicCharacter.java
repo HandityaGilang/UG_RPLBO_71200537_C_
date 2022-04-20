@@ -13,6 +13,6 @@ public abstract class MagicCharacter extends Character{
     }
 
     public void ShowCharacterInfo(){
-        System.out.println("Hero    : "+mana);
+        System.out.println("Hero: "+mana);
     }
 }

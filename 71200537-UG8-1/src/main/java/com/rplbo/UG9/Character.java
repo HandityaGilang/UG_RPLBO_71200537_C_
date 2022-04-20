@@ -10,9 +10,7 @@ public abstract class Character implements ObjectAttack{
         health = this.health;
     }
     public void ShowCharacterInfo(){
-        System.out.println("Hero    : "+name);
-        System.out.println("Hero    : "+health);
-        System.out.println("Hero    : "+damage);
+        System.out.println("\nHero: " + name + "\nhealth: " + health + "\ndamage: "+damage);
 
     }
 
