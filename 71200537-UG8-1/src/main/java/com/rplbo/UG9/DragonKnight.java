@@ -7,12 +7,10 @@ public class DragonKnight extends PhysicalCharacter implements NoTargetSkill{
 
     private int dragonFormAttack;
 
-    @Override
     public void skill() {
         dragonFormAttack = 2;
     }
 
-    @Override
     public void attack(Character karakter) {
         if (dragonFormAttack > 0){
             karakter.attacked(95+90);

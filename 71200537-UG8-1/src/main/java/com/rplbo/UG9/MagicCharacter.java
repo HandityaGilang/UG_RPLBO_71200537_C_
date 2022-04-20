@@ -11,8 +11,7 @@ public abstract class MagicCharacter extends Character{
         super.attacked(serangan);
 
     }
-
     public void ShowCharacterInfo(){
-        System.out.println("Hero: "+mana);
+        System.out.println("mana: "+mana);
     }
 }

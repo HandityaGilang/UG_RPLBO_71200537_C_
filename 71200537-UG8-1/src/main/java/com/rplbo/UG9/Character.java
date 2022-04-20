@@ -10,10 +10,10 @@ public abstract class Character implements ObjectAttack{
         health = this.health;
     }
     public void ShowCharacterInfo(){
-        System.out.println("\nHero: " + name + "\nhealth: " + health + "\ndamage: "+damage);
-
+        System.out.println("Hero: " + this.name);
+        System.out.println("Hero: " + this.health);
+        System.out.println("Hero: " + this.damage);
     }
-
     public boolean isDie(){
         if (health <= 0 ){
             return true;

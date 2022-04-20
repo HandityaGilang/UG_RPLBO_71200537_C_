@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="71200537-UG8-1" />
         <module name="71200537-UG9-1" />
       </profile>
     </annotationProcessing>
