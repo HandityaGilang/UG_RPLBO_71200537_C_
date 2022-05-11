@@ -1,5 +1,7 @@
 package UG10_71200537;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -7,12 +9,18 @@ package UG10_71200537;
 public class App
 {
     public static void main( String[] args ) throws UsernameException, EmailException, PasswordException, LoginException{
-        String username = System.console().readLine("Nama pengguna: ");
-        String email = System.console().readLine("Email: ");
-        char[] pass = System.console().readPassword("Password: ");
-        char[] conpass = System.console().readPassword("Konfimasi Password: ");
-        String password = new String(pass);
-        String konpass = new String(conpass);
+        Scanner username = new Scanner(System.in);
+        System.out.println("Username");
+        String username = username.nextLine();
+        Scanner password = new Scanner(System.in);
+        System.out.println("Password");
+        String password = password.nextLine();
+        Scanner email = new Scanner(System.in);
+        System.out.println("Email");
+        String email = email.nextLine();
+        Scanner konpass = new Scanner(System.in);
+        System.out.println("Konfirmasi Password");
+        String konpass = konpass.nextLine();
         try{
             if (password.isEmpty()){
                 throw new PasswordException(1);
@@ -21,7 +29,8 @@ public class App
 
             }else if((password.equals(username))){
                 throw new PasswordException(4);
-            }
+            }else if((password.equals(konpass))){
+                throw new PasswordException(4);}
             else{
                 boolean flagKecil = false;
                 boolean flagBesar = false;
